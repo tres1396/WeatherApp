@@ -1,0 +1,52 @@
+#full-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#main-header {
+    background: rgb(36, 115, 233);
+    padding: 25px;
+}
+
+#header-text {
+    text-align: center;
+    color: white;
+}
+
+#search-content {
+    color: black;
+    margin-top: 5px;
+    width: 350px;
+    border: 1px solid lightgrey;
+}
+
+#city-search-input {
+    width: 300px;
+}
+
+#search-history {
+    width: 300px;
+    height: 300px;
+}
+#city-info-container {
+    border-radius: 5px;
+    width: 1000px;
+    height: 250px;
+    margin-top: 5px;
+    margin-left: 10px;
+    border: 1px solid lightgrey;
+}
+
+#forecast-container {
+    position: absolute;
+    margin-top: 275px;
+    margin-left: 335px;
+    width: 925px;
+    height: 300px;
+}
+
+#cards-container {
+    display:flex;
+    flex-direction: row;
+}
+

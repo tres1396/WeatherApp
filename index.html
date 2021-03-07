@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Font Awesome Link-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <!--jQuery Link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <!--Local CSS Link-->
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <!--Header Text-->
+    <div id="main-header">
+        <h1 id="header-text">Weather Dashboard</h1>
+    </div>
+
+    <div id="full-container">
+        <!--Search Content Container-->
+        <div id="search-content">
+            <div>
+                <h3 class="search-h3">Search for a city:</h3>
+            </div>
+            <form class="input-group mb-3" id="city-search-form">
+                <input type="text" id="city-input" class="form-control" placeholder="City name or Zip Code"
+                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i
+                        class="fas fa-search"></i></button>
+            </form>
+            <div id="search-history">
+
+            </div>
+        </div>
+        <!--City Info Container-->
+        <div id="city-info-container">
+            <h3 id="city-info-title"></h3>
+            <p id="temperature"></p>
+            <p id="humidity"></p>
+            <p id="wind-speed"></p>
+            <p id="uv-index"></p>
+        </div>
+        <!--Weather Cards-->
+        <div id="forecast-container">
+            <h3>5-Day Forecast:</h3>
+            <div id="cards-container">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <h6 class="card-subtitle mb-2 text-muted"></h6>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <h6 class="card-subtitle mb-2 text-muted"></h6>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <h6 class="card-subtitle mb-2 text-muted"></h6>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <h6 class="card-subtitle mb-2 text-muted"></h6>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <h6 class="card-subtitle mb-2 text-muted"></h6>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>

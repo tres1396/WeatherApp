@@ -42,11 +42,8 @@ $(document).ready(function () {
 //fetch API data
 function getApi(city) {
     var apiKey = "38128371177763caa51ff2b9c7054b07"
-    // var dummyUrl = "http://api.openweathermap.org/data/2.5/forecast?q=atlanta&appid=38128371177763caa51ff2b9c7054b07"
-    // console.log(dummyUrl)
-    // var requestUrl = dummyUrl
+    
     var requestUrl = `http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=38128371177763caa51ff2b9c7054b07`
-    // console.log(requestUrl)
     fetch(requestUrl)
         .then(function (response) {
             return response.json();
@@ -62,7 +59,7 @@ function getApi(city) {
 }
 
 function populateCityInfo(cityName) {
-    // console.log(cityName)
+    
     var cityTitle = cityName.city.name
     var temperature = cityName.list[0].main.temp
     var windSpeed = cityName.list[0].wind.speed
@@ -76,17 +73,14 @@ function populateCityInfo(cityName) {
 }
 
 function populateCards(cardData) {
-    // console.log(cardData)
     var fiveDayWeather = []
     for (var x = 0; x < cardData.length; x++) {
         var item = cardData[x]
         var dateString = item.dt_txt
-        // console.log(item.weather[0].main)
         if (dateString.includes("12:00")) {
             fiveDayWeather.push(item)
         }
     }
-    // console.log(fiveDayWeather)
     var cardsContainer = document.getElementById("cards-container")
     cardsContainer.innerHTML = ""
     for (var x = 0; x < fiveDayWeather.length; x++) {
@@ -97,11 +91,9 @@ function populateCards(cardData) {
 }
 
 function generateCard(weatherObj) {
-    // console.log(weatherObj)
-    // console.log(weatherObj.main.temp,weatherObj.main.humidity)
+    
     var k = weatherObj.main.temp
     var humidity = weatherObj.main.humidity
-    // var weather = weatherObj.weather[0].main
     var iconHtml = weatherObj.weather[0].main.icon
     var dateCard = weatherObj.dt_txt
  

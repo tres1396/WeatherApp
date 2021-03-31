@@ -98,7 +98,7 @@ function generateCard(weatherObj) {
     var dateCard = weatherObj.dt_txt
  
 
-    var card = ` <div class="card" style="width: 18rem;">
+    var card = `<div class="card" style="width: 18rem;">
     <div class="card-body">
       <h5 class="card-title">${dateCard}</h5>
       <h6 class="card-subtitle mb-2 text-muted"> ${iconHtml}</h6>
